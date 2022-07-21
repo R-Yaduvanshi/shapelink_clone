@@ -1,5 +1,5 @@
-import { Button, Flex, Image, Spacer, Box } from "@chakra-ui/react";
 import React from "react";
+import { Box, Button, Flex, Spacer, Image } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import navstyle from "../css/style.module.css";
 
@@ -7,13 +7,14 @@ const Navbar = () => {
   return (
     <>
       <Flex className={navstyle.main_container} gap="8">
-        <Box>
+        <Box w="30%" boxSizing="border-box">
           <NavLink to="/">
             <Image src="https://kcdn.twiikapp.com/images/logo.png" h="40px" />
           </NavLink>
         </Box>
         <Spacer />
-        <NavLink to="/get-the-app">
+        {/* <Box display="flex" gap="8" alignItems="center"> */}
+        <NavLink to="get-the-app">
           <Button variant="link" colorScheme="white">
             Get The App
           </Button>
@@ -44,6 +45,7 @@ const Navbar = () => {
             Create Account
           </Button>
         </NavLink>
+        {/* </Box> */}
       </Flex>
     </>
   );
