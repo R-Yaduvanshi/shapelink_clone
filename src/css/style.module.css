@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap");
+
+/* Navbar Styling */
+.main_container {
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  background: rgba(90, 83, 83, 0.9);
+  /* background: none; */
+  color: white;
+}
+
+.btn2 {
+  padding: 10px 25px;
+  /* margin-top: -10px; */
+  margin-bottom: -10px;
+  line-height: 20px;
+  /* border-radius: 20px; */
+  /* background-image: linear-gradient(to right, #5a3bdb, #75c6ec); */
+
+  /* color: #1e1c26; */
+  width: 157px;
+}
+/* .head { */
+/* background-attachment: fixed; */
+/* background-image: url("https://www.shapelink.com/images/startpage.jpg"); */
+/* height: 600px; */
+/* width: 100%; */
+/* box-sizing: border-box; */
+/* } */
+.mainhead {
+  background: url("https://www.shapelink.com/images/startpage.jpg") no-repeat
+    center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 75px 0px 50px;
+  z-index: 1;
+}
+.startpage_block {
+  display: table;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 50px 0px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+  overflow: hidden;
+  font-size: 16px;
+}
+.startpage_block .content {
+  display: table-cell;
+  margin: 0px auto;
+  padding: 0px 50px;
+  vertical-align: middle;
+  width: 50%;
+  box-sizing: border-box;
+  color: #fff;
+}
+p {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+.h1font {
+  font-family: "Lato", sans-serif;
+}
+/* style="margin-bottom: 50px; font-size: 20px; font-family: lato-light;" */
+
+.startPageBlock {
+  display: table;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 50px 0px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+  overflow: hidden;
+  font-size: 16px;
+  overflow: visible;
+  margin-bottom: -50px;
+}
+.startPageBlock .content {
+  display: table-cell;
+  margin: 0px auto;
+  padding: 0px 50px;
+  vertical-align: middle;
+  width: 50%;
+  box-sizing: border-box;
+}
+.startPageBlock .content .h2 {
+  background: url(/images/pt/startpage_h1_bg.jpg) no-repeat left bottom;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #000;
+  font-family: lato-bold;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+}
+.startPageBlock .image {
+  display: table-cell;
+  margin-top: -150px;
+  z-index: 5;
+}
+.startPageBlock .content .h2 span {
+  display: block;
+  margin-bottom: -5px;
+  font-size: 25px;
+  font-family: lato-bold;
+}
+.line {
+  color: blue;
+  /* width: 40px; */
+}
+ul li {
+  list-style-type: none;
+  margin: 0px 0px 10px 0px;
+  padding-left: 30px;
+  background-size: 20px;
+  box-sizing: border-box;
+}
+/* .listg {
+  background: url(https://kcdn.twiikapp.com/images/pt/startpage_check.png);
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: repeat-x no-repeat;
+  background-repeat: repeat-y no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+} */
