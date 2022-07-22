@@ -5,13 +5,7 @@ import style from "../css/style.module.css";
 const Challange = () => {
   return (
     <>
-      <Box
-        className={style.startpage_block}
-        // backgroundColor="#f7f7fb"
-        // mb="px"
-        // // mt="900px"
-        // p="0px"
-      >
+      <Box className={style.startpage_block} mt="-260px">
         <Box>
           <Image
             src="https://kcdn.twiikapp.com/images/startpage_stream.jpg"
@@ -19,7 +13,11 @@ const Challange = () => {
           />
         </Box>
         <Box className={style.content}>
-          <Text fontSize="6xl" fontWeight="600" className={style.h2}>
+          <Text
+            fontSize="25px"
+            fontWeight="700"
+            fontFamily="'Lato-bold', sans-serif"
+          >
             <span>CHALLENGE & BOOST</span>
             {/* <AiOutlineLine className={style.line} /> */}
             <Image

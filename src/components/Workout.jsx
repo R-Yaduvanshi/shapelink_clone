@@ -11,7 +11,11 @@ const Workout = () => {
         p="0px"
       >
         <Box className={style.content}>
-          <Text fontSize="6xl" fontWeight="600" className={style.h2}>
+          <Text
+            fontSize="25px"
+            fontWeight="700"
+            fontFamily="'Lato-bold', sans-serif"
+          >
             <span>WORKOUTS PROGRAMS & COACHING</span>
             {/* <AiOutlineLine className={style.line} /> */}
             <Image
