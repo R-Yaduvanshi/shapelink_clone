@@ -1,1 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+.navbar {
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  background: rgba(1, 16, 18, 0.9);
+  /* background: none; */
+  color: white;
+}

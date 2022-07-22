@@ -15,7 +15,11 @@ const BodyBottom = () => {
     <>
       <Box mt="120px">
         <Container maxW="90%">
-          <Text fontSize="2xl" fontWeight="bold">
+          <Text
+            fontSize="25px"
+            fontWeight="700"
+            fontFamily="'Lato-bold', sans-serif"
+          >
             THIS IS INCLUDED IN TWIIK
           </Text>
           <Image
@@ -23,7 +27,7 @@ const BodyBottom = () => {
             src="https://kcdn.twiikapp.com/images/pt/startpage_h1_bg.jpg"
           />
         </Container>
-        <Container maxW="90%" mt="40px" marginBottom="200px">
+        <Container maxW="90%" mt="40px" marginBottom="145px">
           <Grid gridTemplateColumns="repeat(3,1fr)" gap="20px">
             <GridItem display="flex" gap="25px">
               <Box>

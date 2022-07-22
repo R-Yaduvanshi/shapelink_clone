@@ -8,7 +8,11 @@ const MobileImg = () => {
     <>
       <Box className={style.startpage_block}>
         <Box className={style.content}>
-          <Text fontSize="6xl" fontWeight="600" className={style.h2}>
+          <Text
+            fontSize="25px"
+            fontWeight="700"
+            fontFamily="'Lato-bold', sans-serif"
+          >
             <span>What Is Twiik?</span>
             {/* <AiOutlineLine className={style.line} /> */}
             <Image

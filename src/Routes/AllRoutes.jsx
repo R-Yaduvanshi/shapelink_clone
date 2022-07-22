@@ -5,6 +5,7 @@ import GetTheApp from "../Pages/GetTheApp";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
+import TermsCondition from "../Pages/TermsCondition";
 
 const AllRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AllRoutes = () => {
       <Route path="/contact" element={<Contacts />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/terms&condition" element={<TermsCondition />} />
     </Routes>
   );
 };

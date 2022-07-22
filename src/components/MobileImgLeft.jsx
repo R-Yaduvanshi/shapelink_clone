@@ -19,53 +19,60 @@ const MobileImgLeft = () => {
         overflow="hidden"
         fontSize="16px"
       >
-        <Box textAlign="center" display="table-cell">
-          <Image src="https://kcdn.twiikapp.com/images/startpage_stats.png" />
-        </Box>
-        <Box
-          display="table-cell"
-          m="0px auto"
-          p="0px 50px"
-          verticalAlign="middle"
-          boxSizing="border-box"
-        >
-          <Text className={style.list}>
-            KEEP TRACK OF YOUR HABITS WITH OUR WORKOUT LOG
-          </Text>
-          <ul>
-            <li
-              className={style.listg}
-              style={{
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "center",
-              }}
+        <Container maxW="90%">
+          <Box textAlign="center" display="table-cell">
+            <Image src="https://kcdn.twiikapp.com/images/startpage_stats.png" />
+          </Box>
+          <Box
+            display="table-cell"
+            m="0px auto"
+            p="0px 50px"
+            verticalAlign="middle"
+            boxSizing="border-box"
+            w="53%"
+          >
+            <Text
+              fontSize="25px"
+              fontWeight="700"
+              fontFamily="'Lato-bold', sans-serif"
             >
-              <Icon as={TiTick} color="#4b12d8" h={8} w={8} /> Your own digital
-              fitness log
-            </li>
-            <li
-              style={{
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "center",
-              }}
-            >
-              <Icon as={TiTick} color="#4b12d8" h={8} w={8} /> Log all types of
-              activities
-            </li>
-            <li
-              style={{
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "center",
-              }}
-            >
-              <Icon as={TiTick} h={8} w={8} color="#4b12d8" /> Follow your
-              results and keep track of your progress and habits
-            </li>
-          </ul>
-        </Box>
+              KEEP TRACK OF YOUR HABITS WITH OUR WORKOUT LOG
+            </Text>
+            <ul>
+              <li
+                className={style.listg}
+                style={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                }}
+              >
+                <Icon as={TiTick} color="#4b12d8" h={8} w={8} /> Your own
+                digital fitness log
+              </li>
+              <li
+                style={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                }}
+              >
+                <Icon as={TiTick} color="#4b12d8" h={8} w={8} /> Log all types
+                of activities
+              </li>
+              <li
+                style={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                }}
+              >
+                <Icon as={TiTick} h={8} w={8} color="#4b12d8" /> Follow your
+                results and keep track of your progress and habits
+              </li>
+            </ul>
+          </Box>
+        </Container>
       </Box>
     </>
   );
