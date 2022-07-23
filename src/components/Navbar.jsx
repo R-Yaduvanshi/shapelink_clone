@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import navstyle from "../css/style.module.css";
 import Login from "../Pages/Login";
 import "../App.css";
+import ButtonBtn from "../CommonForAll/ButtonBtn";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -15,9 +16,15 @@ const Navbar = () => {
       setNavbar(false);
     }
   };
+
+  window.addEventListener("scroll", changeNavbarBackground);
   return (
     <>
-      <Flex className="navbar active" gap="8">
+      <Flex
+        className={navbar ? "navbar active" : "navbar"}
+        // className="navbar"
+        gap="8"
+      >
         <Box w="30%" boxSizing="border-box">
           <NavLink to="/">
             <Image src="https://kcdn.twiikapp.com/images/logo.png" h="40px" />
@@ -37,20 +44,9 @@ const Navbar = () => {
         {/* Login Modal */}
         <Login />
         <NavLink to="/signup">
-          <Button
-            className={navstyle.btn2}
-            bgGradient="linear(to-r, #5a3bdb, #75c6ec)"
-            borderRadius="25px"
-            color="white"
-            _hover={{
-              bgGradient: "linear(to-r, #5a3bdb, #75c6ec)",
-              color: "white",
-              boxShadow: "dark-lg",
-            }}
-          >
-            Create Account
-          </Button>
+          <ButtonBtn />
         </NavLink>
+        <NavLink to="/mainhome">MainHome</NavLink>
       </Flex>
     </>
   );
