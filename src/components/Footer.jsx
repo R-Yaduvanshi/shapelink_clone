@@ -15,7 +15,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleNavigateContact = () => {
-    navigate("/contacts");
+    navigate("/contact");
   };
 
   const handleNavigateTerms = () => {

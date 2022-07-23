@@ -1,5 +1,6 @@
 import { Box, Button, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import ButtonBtn from "../CommonForAll/ButtonBtn";
 import headstyle from "../css/style.module.css";
 
 const Header = () => {
@@ -37,30 +38,12 @@ const Header = () => {
               The personal coach in your pocket. <br /> When, where and how you
               want.
             </Text>
-            <Text>
+            <Text mb="2.5rem">
               As a member you can log your workouts in your workout log directly
               in the app. Follow your results, get individual results, personal
               coaching and statistics.
             </Text>
-            <Button
-              //   className={navstyle.btn2}
-              bgGradient="linear(to-r, #5a3bdb, #75c6ec)"
-              borderRadius="25px"
-              color="white"
-              _hover={{
-                bgGradient: "linear(to-r, #5a3bdb, #75c6ec)",
-                color: "white",
-                boxShadow: "dark-lg",
-              }}
-              p="0px 25px"
-              lineHeight="50px"
-              box-shadow="0px 0px 10px rgb(0 0 0 / 10%)"
-              maxW="200px"
-              minW="auto"
-              mt="50px"
-            >
-              Create Account
-            </Button>
+            <ButtonBtn />
           </Box>
         </Box>
       </Box>
