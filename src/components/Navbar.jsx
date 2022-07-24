@@ -46,7 +46,6 @@ const Navbar = () => {
         <NavLink to="/signup">
           <ButtonBtn />
         </NavLink>
-        <NavLink to="/mainhome">MainHome</NavLink>
       </Flex>
     </>
   );

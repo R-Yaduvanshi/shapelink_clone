@@ -69,6 +69,7 @@ const Login = ({ onChange }) => {
             auth.handleLogin(res.token);
 
             if (res.token) {
+              alert("Logged in");
               console.log("sahi ja raha hai");
             } else {
               console.log("galat ho rah ahai");
@@ -87,7 +88,7 @@ const Login = ({ onChange }) => {
       {(formik) => (
         <>
           <Button variant="link" colorScheme="white" onClick={onOpen}>
-            Login
+            {auth.state.isAuth ? `Token ${auth.state.token}` : "Login"}
           </Button>
           <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false}>
             <ModalOverlay />
@@ -95,8 +96,6 @@ const Login = ({ onChange }) => {
             <ModalContent
               rounded="none"
               className={style.modalhead}
-              border="1px"
-              borderColor="red"
               marginTop="6.5rem"
             >
               <Container maxW="82%">
