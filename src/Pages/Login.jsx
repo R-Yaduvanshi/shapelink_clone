@@ -119,7 +119,11 @@ const Login = ({ onChange }) => {
                   </VStack>
                   {/* Input Field */}
                   <FormText name="username" placeholder="username_or_email" />
-                  <FormText name="password" placeholder="password" />
+                  <FormText
+                    name="password"
+                    placeholder="password"
+                    type="password"
+                  />
 
                   <VStack align={["flex - start", "center"]} w="full">
                     <Checkbox size="sm">
